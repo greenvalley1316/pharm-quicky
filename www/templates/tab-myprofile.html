@@ -1,0 +1,151 @@
+<ion-view>
+
+    <div class="pq-div-header-main row">
+        <div class="col-20">
+            <img class="pq-header-logo" src="img/app_logo.png">
+        </div>
+        <div class="col-67" style="margin-top: 6px;">My Profile</div>
+        <div class="col-10 pq-div-badge-container" ng-click="showCart()">
+            <i class="icon ion-ios-cart pq-badge-container">
+                <span class="badge badge-assertive pq-div-badge-style">2</span>
+            </i>
+        </div>
+    </div>
+    <ion-content>
+
+        <ion-scroll>
+
+            <div class="pq-div-main-content padding">
+
+                <div class="list card">
+
+                    <div class="pq-div-profile-row-items">
+                        <div class="row">
+                            <div class="col-10" style="color: black !important; font-size: 19px;margin-right: -13px">
+                                <i class="icon ion-person"></i>
+                            </div>
+                            <div class="col-33" style="font-size: 13px; margin-left: 5px;">
+                                <span style="color: #444 !important">Name</span>
+                            </div>
+                            <div class="col-50" style="padding-left: 7px;font-size: 12px">
+                                <div class="pq-div-input-box">Zeeshan Anwar</div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="pq-div-profile-row-items">
+                        <div class="row">
+                            <div class="col-10" style="color: black !important; font-size: 19px;margin-right: -13px">
+                                <i class="icon ion-ios-telephone"></i>
+                            </div>
+                            <div class="col-33" style="font-size: 13px; margin-left: 5px;">
+                                <span style="color: #444 !important">Mobile</span>
+                            </div>
+                            <div class="col-50" style="padding-left: 7px;font-size: 12px">
+                                <div class="pq-div-input-box">8100013375</div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="pq-div-profile-row-items">
+                        <div class="row">
+                            <div class="col-10" style="color: black !important; font-size: 19px;margin-right: -13px">
+                                <i class="icon ion-email"></i>
+                            </div>
+                            <div class="col-33" style="font-size: 13px; margin-left: 5px;">
+                                <span style="color: #444 !important">E-mail</span>
+                            </div>
+                            <div class="col-50" style="padding-left: 7px;font-size: 12px">
+                                <div class="pq-div-input-box">zeeshan.lnsel@gmail.com</div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="pq-div-profile-row-items">
+                        <div class="row">
+                            <div class="col-10" style="color: black !important; font-size: 19px;margin-right: -13px">
+                                <i class="icon ion-ios-location"></i>
+                            </div>
+                            <div class="col-33" style="font-size: 13px; margin-left: 5px;">
+                                <span style="color: #444 !important">Address</span>
+                            </div>
+                            <div class="col-50" style="padding-left: 7px;font-size: 12px">
+                                <div class="pq-div-input-box">22/C Linton Street, Kolkata</div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="pq-div-profile-row-items">
+                        <div class="row">
+                            <div class="col-10" style="color: black !important; font-size: 19px;margin-right: -13px">
+                                <i class="icon ion-pin"></i>
+                            </div>
+                            <div class="col-33" style="font-size: 13px; margin-left: 5px;">
+                                <span style="color: #444 !important">Zip Code</span>
+                            </div>
+                            <div class="col-50" style="padding-left: 7px;font-size: 12px">
+                                <div class="pq-div-input-box">700014</div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+
+
+                <!-- <div class="item item-icon-left">
+                        <i class="icon ion-person"></i> Zeeshan Anwar
+                    </div>
+
+                    <div class="item item-icon-left">
+                        <i class="icon ion-ios-telephone"></i> 8100013375
+                    </div>
+
+                    <div class="item item-icon-left">
+                        <i class="icon ion-email"></i> zeeshan.lnsel@gmail.com
+                    </div>
+
+                    <div class="item item-icon-left">
+                        <i class="icon ion-ios-location"></i> Address
+                    </div>
+
+                    <div class="item item-icon-left">
+                        <i class="icon ion-pin"></i> Zip Code
+                    </div> -->
+
+
+
+               
+                    <!-- <a href="#/" style="float: left">Change password</a>
+                    <a href="#/" style="float: right">Edit Profile</a> -->
+                    <div style="float: left">
+                        <button class="button button-light" ng-click="openChangePassModal()">
+                                    Change Password
+                                  </button>
+                    </div>
+                    <div style="float: right">
+                        <button class="button button-light" ng-click="openEditProfileModal()">
+                                    Edit Profile
+                                  </button>
+                    </div>
+                    <br>
+                    <button class="button button-full button-balanced pq-div-button-full" style="margin-top: 50px" ng-click="logout()">
+                    LOGOUT
+                </button>
+                
+
+            </div>
+
+        </ion-scroll>
+
+    </ion-content>
+
+</ion-view>

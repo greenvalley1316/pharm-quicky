@@ -1,0 +1,126 @@
+<ion-view>
+
+    <div class="pq-div-header-main row">
+        <div class="col-20">
+            <img class="pq-header-logo" src="img/app_logo.png">
+        </div>
+        <div class="col-67" style="margin-top: 6px;">Your Cart</div>
+        <div class="col-10 pq-div-header-back-btn" ng-click="goBack()">
+            <i class="ion-ios-arrow-thin-left"></i>
+        </div>
+    </div>
+
+    <ion-content style="position: absolute">
+
+        <ion-scroll>
+
+            <div class="pq-div-main-content pq-div-margin-padding-bottom">
+
+                <!-- <div class="list">
+            
+              <div class="item item-input-inset">
+                <label class="item-input-wrapper">
+                  <input type="text" placeholder="Enter Coupon Code">
+                </label>
+                <button class="button button-small">
+                  Apply
+                </button>
+              </div>
+            
+            </div> -->
+
+
+
+
+                <div class="item-input-inset">
+                    <label class="item-input-wrapper pq-div-coupon-border">
+                    <input type="text" placeholder="Enter Coupon Code">
+                  </label>
+
+                    <button class="button button-small pq-div-coupon-border pq-coupon-apply-btn">
+                    Apply
+                  </button>
+                </div>
+                <span class="pq-div-margin-left-right pq-div-small-texts">*Promo codes are applicable on Medicines only.</span>
+
+                <h5 class="padding">Medicines</h5>
+
+                <ion-list>
+                    <ion-item class="item item-icon-right">
+                        <h2 style="color: #0D0D47">Crocine Tab</h2>
+                        <p class="wrap" style="color: #5E5E6E">Glaxo Smithkline <br> Strip of 15 tablets</p>
+                        <i class="icon ion-trash-b"></i>
+                        <br>
+
+                        <!-- Incrementer-Decrementer -->
+                        <div class="row" style="height: 40px !important">
+                            <div class="item col-33 row padding pq-countdown">
+                                <i class="ion ion-minus-round col-33 pq-intdecIcon" style="float:left" ng-click="sub();"></i>
+                                <span class="col-33" ng-model="quantity" style="font-size:20px">{{quantity}}</span>
+                                <i class="ion ion-plus-round col-33 pq-intdecIcon" style="float:right" ng-click="add();"></i>
+                            </div>
+
+                            <div class="col-20 padding"> x &#x20b9; {{price}}</div>
+                            <div class="col col-offset-25"></div>
+                            <div class="col-20 padding" style="color:#0D0D47; text-align:right"><b>&#x20b9; {{price}}</b></div>
+                        </div>
+                    </ion-item>
+
+
+                    <!-- ITEM NO 2 -->
+                    <ion-item class="item item-icon-right">
+                        <h2 style="color: #0D0D47">Pediasure</h2>
+                        <p class="wrap" style="color: #5E5E6E">Premium Chocolates <br> 400 grams</p>
+                        <i class="icon ion-trash-b"></i>
+                        <br>
+
+                        <!-- Incrementer-Decrementer -->
+                        <div class="row" style="height: 40px !important">
+                            <div class="item col-33 row padding pq-countdown">
+                                <i class="ion ion-minus-round col-33 pq-intdecIcon" style="float:left" ng-click="sub2();"></i>
+                                <span class="col-33" ng-model="quantity" style="font-size:20px">{{quantity2}}</span>
+                                <i class="ion ion-plus-round col-33 pq-intdecIcon" style="float:right" ng-click="add2();"></i>
+                            </div>
+
+                            <div class="col-20 padding"> x &#x20b9; {{price2}}</div>
+                            <div class="col col-offset-25"></div>
+                            <div class="col-20 padding" style="color:#0D0D47; text-align:right"><b>&#x20b9; {{price2}}</b></div>
+                        </div>
+                    </ion-item>
+                </ion-list>
+
+                <br>
+
+                <div class="row">
+                    <div class="col-67 padding" style="color:#969393;">Subtotal</div>
+                    <div class="col-33 padding" style="color:#0D0D47; text-align:right"><b>&#x20b9; {{price}}</b></div>
+                </div>
+
+                <div class="row">
+                    <div class="col-67 padding" style="color:#088B08;">Coupon Discount@20%</div>
+                    <div class="col-33 padding" style="color:#0D0D47; text-align:right"><b>&#x20b9; -10</b></div>
+                </div>
+
+                <div class="row">
+                    <div class="col-67 padding" style="color:#0D0D47;">Estimated Total</div>
+                    <div class="col-33 padding" style="color:#0D0D47; text-align:right"><b>&#x20b9; 39</b></div>
+                </div>
+
+            </div>
+
+
+        </ion-scroll>
+
+
+    </ion-content>
+
+
+    <div class="pq-div-bottom-content">
+        Note: This price shown from medicines is an estimate; final price will be prepared during billing.
+    </div>
+
+    <div class="bar bar-footer bar-stable" style="background: #228022;" id="pfooter" ng-click="gotoOTCCheckout()">
+        <div class="title" style="cursor: pointer; color: white;">Proceed</div>
+    </div>
+
+</ion-view>

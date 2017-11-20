@@ -1,0 +1,60 @@
+<ion-view>
+
+    <div class="pq-div-header-main row">
+        <div class="col-20">
+            <img class="pq-header-logo" src="img/app_logo.png">
+        </div>
+        <div class="col-67" style="margin-top: 6px;">OTP</div>
+        <div class="col-10 pq-div-header-back-btn" ng-click="goBack()">
+            <i class="ion-ios-arrow-thin-left"></i>
+        </div>
+    </div>
+
+    <ion-content>
+
+        <ion-scroll>
+
+            <div class="list padding pq-div-main-content">
+                <div class="pq-div-center-pro">
+                    <img src="img/theme_logo.png" style='height: 100%;' />
+                </div>
+                <div style="text-align: center"><span>Please Enter Your Phone No</span></div>
+                <!-- <form name="formMobile" novalidate> -->
+                <div class="list padding">
+                    <label class="item item-input">                            
+                                <input type="text" name="phone" ng-model="userInfo.phone" placeholder="Mobile Number">
+                              </label>
+                    <br>
+
+                    <button type="submit" name="OTP" class="button button-full button-balanced pq-div-button-full" ng-click="sendOtp(userInfo)"
+                        style="float: left">
+                                    SEND OTP
+                                </button>
+                </div>
+                <!-- </form> -->
+
+                <br><br><br><br>
+
+                <div ng-show="isOtp">
+                    <div style="text-align: center"><span>Please Enter OTP</span></div>
+                    <div class="list padding">
+                        <label class="item item-input">                    
+                        <input type="text" ng-if="otp == ''" ng-required="true" placeholder="OTP">
+                        <input type="text" ng-if="otp != ''" ng-required="true" value="{{otp}}" ng-model="otp">
+                    </label>
+                        <div class="row">
+                            <button class="button button-positive pq-div-button-full col-50" ng-click="validateOtp(otp)" style="float: left">
+                            SUBMIT
+                        </button>
+                            <button type="submit" name="OTP" class="button button-royal pq-div-button-full col-50" ng-click="resendOtp(userInfo)" style="float: right">
+                            RESEND OTP
+                        </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </ion-scroll>
+
+    </ion-content>
+</ion-view>

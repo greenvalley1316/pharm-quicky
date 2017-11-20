@@ -1,0 +1,40 @@
+<ion-view>
+        <div class="pq-div-header-main row">
+                <div class="col-20">
+                        <img class="pq-header-logo" src="img/app_logo.png">
+                </div>
+                <div class="col-67" style="margin-top: 6px;">Pin Code</div>
+                <div class="col-10 pq-div-header-back-btn" ng-click="goBack()">
+                        <i class="ion-ios-arrow-thin-left"></i>
+                </div>
+        </div>
+
+        <ion-content>
+
+                <ion-scroll>
+
+                        <div class="padding pq-div-main-content">
+
+                                <div class="pq-div-center-pro">
+                                        <div class="app-icon" style="background: url('img/location.png') no-repeat center; margin-top: 50px !important; margin-bottom: 50px !important"></div>
+                                        <div class="div-pharmquicky-subheading">Please Enter Your PIN Code</div>
+                                </div>
+
+
+                                <div class="list padding" style="margin-top:30px">
+                                        <label class="item item-input">
+                                    <i class="icon ion-ios-location placeholder-icon"></i>
+                                    <input type="password" placeholder="PIN Code">
+                                  </label>
+
+                                        <button class="button button-full button-balanced pq-div-button-full" ng-click="gotoOTCSearch()">
+                                        Submit
+                                      </button>
+                                </div>
+
+                        </div>
+
+                </ion-scroll>
+
+        </ion-content>
+</ion-view>

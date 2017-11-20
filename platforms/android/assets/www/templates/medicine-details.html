@@ -1,0 +1,67 @@
+<ion-view>
+
+    <div class="pq-div-header-main row">
+        <div class="col-20">
+            <img class="pq-header-logo" src="img/app_logo.png">
+        </div>
+        <div class="col-67" style="margin-top: 6px;">Medicine Details</div>
+        <div class="col-10 pq-div-header-back-btn" ng-click="goBack()">
+            <i class="ion-ios-arrow-thin-left"></i>
+        </div>
+    </div>
+
+    <ion-content>
+
+        <ion-scroll>
+
+            <div class="padding pq-div-main-content pq-div-margin-padding-bottom">
+                <!-- <ion-list>
+            <ion-item>
+                <h2>item.title => Crocine Tab</h2>
+                <p>item.description => Glaxo Smithkline</p>
+                <h2>item.price => Rs.49</h2>
+            </ion-item>
+        </ion-list> -->
+
+                <div class="padding">
+                    <h5 style="color: #0D0D47">item.title => Crocine Tab</h2>
+                        <p style="color: #5E5E6E">item.description => Glaxo Smithkline <br> Strip of 15 tablets </p>
+                        <br>
+                        <h5 style="color: #0D0D47">item.price => &#x20b9; 49</h2>
+                </div>
+
+                <div class="item pq-countdown padding">
+                    <div style="float:left;" ng-click="sub();"><i class="ion ion-minus-round pq-intdecIcon"></i></div>
+                    <span ng-model="quantity" style="font-size:20px">{{quantity}}</span>
+                    <div style="float:right" ng-click="add();"><i class="ion ion-plus-round pq-intdecIcon"></i></div>
+                </div>
+
+                <div class="pq-div-border"></div>
+
+                <div class="row padding">
+                    <button class="col-50 button button-small button-balanced" style="margin: 0 auto; margin-right:5px;" ng-click="gotoCart()">
+              ADD TO CART
+            </button>
+                    <button class="col-50 button button-small button-positive" style="margin: 0 auto; margin-left: 5px;" ng-click="gobacktoHome()">
+              CONTINUE SHOPPING
+            </button>
+                </div>
+            </div>
+
+
+
+            <!-- <div class="flex-row">
+            <button class="button icon ion-minus-circled red" ng-click="sub()"></button>
+            <span>{{quantity}}</span>
+            <button class="button icon ion-plus-circled green" ng-click="add()"></button>
+          </div> -->
+
+        </ion-scroll>
+
+    </ion-content>
+
+    <div class="bar bar-footer bar-stable" style="background: #228022;" id="pfooter" ng-click="doSomething()">
+        <div class="title" style="cursor: pointer; color: white;">Shop Now</div>
+    </div>
+
+</ion-view>

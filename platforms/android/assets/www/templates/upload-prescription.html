@@ -1,0 +1,60 @@
+<ion-view>
+
+    <div class="pq-div-header-main row">
+        <div class="col-20">
+            <img class="pq-header-logo" src="img/app_logo.png">
+        </div>
+        <div class="col-67" style="margin-top: 6px;">Upload Prescription</div>
+        <div class="col-10 pq-div-header-back-btn" ng-click="goBack()">
+            <i class="ion-ios-arrow-thin-left"></i>
+        </div>
+    </div>
+
+    <ion-content>
+        <div class="padding pq-div-main-content">
+
+            <div style="padding: 5px; font-size: 11px; color: #A09C9C;">Upload images of your Prescriptions to order your Medicines</div>
+
+            <div class="row pq-div-presc-uploader">
+                <div class="col-25" style="background: url('img/camera.png') no-repeat center;"></div>
+                <div class="col-75" style="margin-top: 5px">Camera</div>
+            </div>
+
+            <br>
+
+            <div class="row pq-div-presc-uploader">
+                <div class="col-25" style="background: url('img/gallery.png') no-repeat center;"></div>
+                <div class="col-75" style="margin-top: 5px">Gallery</div>
+            </div>
+
+            <br><br><br><br><br>
+
+            <div style="color: red; font-size: 12px;">Select anyone to continue:</div>
+            <label class="item-checkbox">
+                        <div class = "item-content" style="white-space: normal !important">
+                   <input type = "radio" name = "group1" ng-checked="true" ng-model="value" value="'call'" ng-change='newValue(value)'/>
+                   I want the pharmacist to call and confirm the medicines and quantities
+                   </div>                   
+                </label>
+
+            <label class="item-checkbox">
+                        <div class = "item-content" style="white-space: normal !important">
+                   <input type = "radio" name = "group1" ng-model="value" value="'comment'" ng-change='newValue(value)'/>
+                   Do not call me. I want to enter the medicines and quantity now
+                   </div>
+                </label>
+
+            <textarea ng-if="value == 'comment'" class="pq-div-textarea-property" placeholder="Comment if any instruction."></textarea>
+
+        </div>
+
+    </ion-content>
+
+    <div class="pq-div-bottom-content">
+            Note: This price shown from medicines is an estimate; final price will be prepared during billing.
+        </div>
+
+    <div class="bar bar-footer bar-stable" style="background: #228022;" id="pfooter" ng-click="doSomething()">
+        <div class="title" style="cursor: pointer; color: white;">Next</div>
+    </div>
+</ion-view>

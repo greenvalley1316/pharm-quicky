@@ -1,0 +1,194 @@
+/* Empty. Add your own CSS if you like */
+
+/*Non-tabbed page Header CSS*/
+.pq-div-header-main {
+    background: #313153 !important;
+    height: 45px !important;
+    color: white;
+    z-index: 9;
+    position: absolute;
+ }
+
+ .pq-header-logo {
+    margin-left: 8px; height: 30px;
+}
+
+.pq-div-header-back-btn {
+    text-align: center; margin-top: 6px; font-size: 20px;
+}
+
+    .pq-div-center-pro     /*pages theme logo div*/
+    {
+        text-align: center;
+        width: 200px;
+        height: 120px;
+        margin: 0 auto;
+        margin-top: 10px; 
+        /* margin-bottom: 50px; */
+    }
+
+    .app-icon {        /*page theme logo*/
+        height: 130px;
+        margin: 0 auto;
+        padding: 10px;
+        margin-top: 20px;
+        margin-bottom: 10px;
+        width: 60%;
+    }
+
+    .pq-div-badge-container {
+        text-align: center; margin-top: 6px;
+    }
+
+    .pq-badge-container{
+        position: relative; font-size: 25px;
+    }
+
+    .pq-div-badge-style {
+        font-size: 9px; right: -20px; top: -5px; position: absolute;
+    }
+
+    .pq-div-main-content {         /*main content div inside <ion-content>*/
+        margin-top: 56px !important;
+        width: 90%;
+        margin: 0 auto;        
+        /* padding-top: 20px; */
+    }
+
+    .pq-div-margin-padding-bottom {
+        margin-bottom:56px !important; 
+        padding-bottom:56px;
+    }
+
+    .custom-error{
+        color: red;
+        font-size: 10px;
+        font-family: "Kaushan Script";
+        padding-left: 7px;
+    }
+
+    .pq-div-search-bar {
+        border: 1px solid; height:50px !important; border-color: green;
+    }
+
+    .pq-slider-contents {
+        height: 120px; background-color: #F369AC; font-size: 14px; text-align:center; color: white;
+    }
+
+    /*Incrementer Decrementer divs*/
+
+    .pq-countdown { border-radius: 5px; border: none; padding: 5px !important; text-align: center; width: 150px; background-color: #B9B3B3 }
+
+    .pq-intdecIcon { cursor: pointer; font-size: 1em; margin-top: 3px; padding: 4px }
+
+    .pq-div-border { border: 0.5px solid #CAC6C6; margin-top: 10px; margin-bottom: 10px; }
+        
+
+    .pq-div-regform {     /*registration form div*/
+        /* margin-top: 70px; padding: 30px; */
+        /* width: 400px; */
+        left: 0;
+        right: 0;
+        margin:0 auto;
+        top:40%;
+        transform:translateY(40%);
+     }
+
+     .pq-div-margin-left-right {
+         margin-left: 10px;  margin-right: 10px;
+     }
+
+     .pq-div-small-texts {
+         font-size: 10px; color: #9B9B9B;
+     }
+
+     .pq-div-bottom-content {
+        font-size:10px;
+        line-height: 13px; 
+        height: 56px;
+        position: absolute; 
+        bottom: 6%; 
+        left: 0%;
+        right: 0%;
+        background: #D4A3CE;
+        padding: 17px;
+        margin: 0 auto;
+     }
+
+     /* p.wrap {
+        word-wrap: normal;
+        word-wrap: break-word;
+        padding-right: 10px;
+        white-space: normal;
+     } */
+     
+     .pq-div-radio-head {
+        color: red; font-size: 14px;
+     }
+
+     .pq-div-textarea-property {
+        font-size: 14px; height: 75px; width: 100%; border: 1px solid black; padding: 10px;
+     }
+
+     .pq-div-presc-uploader {
+        border: 0.5px solid #7777FF; background-color: #D1D1F3; margin: 0 auto; height: 40px;
+     }
+
+     .pq-div-coupon-border {
+         height: 40px;
+         border: 0.5px solid green; 
+         border-radius: 0px !important;
+     }
+
+     .pq-coupon-apply-btn {
+        background-color: #D1CDCD;  width: 60px; margin-left: 0px !important;
+     }
+
+     .pq-div-home-grid {       /*home*/
+        background-color: #EFFAFA; 
+        border-right:outset 1px #C0B9B9;
+        font-size: 12px;
+     }
+
+     .pq-item-style {          /*notifications*/
+        font-size: 12px;
+     }
+
+     .pq-div-icon-element {       /*common*/
+        height: 60%;
+        margin: 0 auto;
+        padding: 10px;
+        width: 40%;
+     }
+
+     .div-pharmquicky-heading
+     {
+          color: #023807;
+         text-shadow: 0 1px 0px #000;
+         font-size: 35px;
+     }
+
+     .div-pharmquicky-subheading
+     {
+        font-size: 12px; 
+        color: #619AAC; 
+        margin-top: 15px;
+     }
+
+     .pq-div-button-full
+     {
+        /* width: 95% !important;  */
+        margin: 0 auto
+     }
+
+     .pq-div-input-box
+     {
+       color:black !important;
+       width:100%;
+       /* border:1px solid gray !important; */
+     }
+
+     .pq-div-profile-row-items {
+        padding:10px; 
+        border-bottom:1px solid black;
+     }

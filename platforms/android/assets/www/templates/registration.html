@@ -1,0 +1,55 @@
+<ion-view>
+
+
+
+    <div class="pq-div-header-main row">
+        <div class="col-20">
+            <img class="pq-header-logo" src="img/app_logo.png">
+        </div>
+        <div class="col-67" style="margin-top: 6px;">Register</div>
+        <div class="col-10 pq-div-header-back-btn" ng-click="goBack()">
+            <i class="ion-ios-arrow-thin-left"></i>
+        </div>
+    </div>
+
+    <ion-content>
+
+        <ion-scroll>
+
+            <div class="list pq-div-main-content pq-div-margin-padding-bottom">
+
+                <form class="pq-div-regform padding">
+                    <label class="item item-input">
+                        <i class="icon ion-android-person placeholder-icon" style="margin-right: 10px"></i>
+                        <input type="text" placeholder="Your Name" ng-model="userInfo.usrName" required>
+                    </label>
+                    <label class="item item-input">
+                            <i class="icon ion-ios-email placeholder-icon" style="margin-right: 10px"></i>
+                            <input type="text" placeholder="Your Email" ng-model="userInfo.usrEmail" required>
+                        </label>
+                    <label class="item item-input">
+                        <i class="icon ion-android-lock placeholder-icon" style="margin-right: 10px"></i>
+                        <input type="password" placeholder="Set Password" ng-model="userInfo.usrPassword" required>
+                    </label>
+
+                    <label class="item item-input">
+                            <i class="icon ion-android-lock placeholder-icon" style="margin-right: 10px"></i>
+                            <input type="password" placeholder="Confirm Password" ng-model="userInfo.usrCnfrmPassword" required>
+                        </label>
+                    <label class="item item-input">
+                            <i class="icon ion-location placeholder-icon" style="margin-right: 10px"></i>
+                            <input type="text" placeholder="Pincode" ng-model="userInfo.usrPin">
+                        </label>
+                    <div style="margin-top:20px">
+                        <button class="button button-full button-positive pq-div-button-full" ng-click="submitRegistration(userInfo)">
+                            SUBMIT
+                        </button>
+                    </div>
+                </form>
+
+            </div>
+
+        </ion-scroll>
+
+    </ion-content>
+</ion-view>
